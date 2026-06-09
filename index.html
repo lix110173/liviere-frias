@@ -17,9 +17,9 @@ nav{
   position:fixed;top:0;left:0;right:0;z-index:200;
   height:56px;display:flex;align-items:center;justify-content:space-between;
   padding:0 48px;
-  background:rgba(237,232,220,0.94);
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid rgba(192,177,144,0.2);
+  background:transparent;
+  backdrop-filter:none;
+  border-bottom:none;
 }
 .nav-links{display:flex;gap:28px;list-style:none}
 .nav-links a{
@@ -75,20 +75,20 @@ nav{
   width:clamp(44px,4.5vw,72px);
   height:clamp(44px,4.5vw,72px);
   border-radius:clamp(6px,0.8vw,12px);
-  border:2px solid rgba(255,255,255,0.75);
+  border:2px solid rgba(0,0,0,0.3);
   display:flex;align-items:center;justify-content:center;
   text-decoration:none;
-  background:rgba(255,255,255,0.08);
+  background:rgba(0,0,0,0.15);
   transition:transform .2s, background .2s, border-color .2s;
   cursor:pointer;
 }
 .cbtn:hover{
   transform:translateY(-4px) scale(1.07);
-  background:rgba(255,255,255,0.22);
-  border-color:#fff;
+  background:rgba(0,0,0,0.3);
+  border-color:rgba(0,0,0,0.5);
 }
 .cbtn span{
-  color:#fff;
+  color:#000;
   font-size:clamp(13px,1.4vw,22px);
   font-weight:700;
   font-family:'Barlow Condensed',sans-serif;
@@ -109,6 +109,7 @@ footer p{font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:upper
   nav{padding:0 16px}
   .nav-links{display:none}
   .contact-bar{gap:6px}
+  #s1{padding-top:100px}
 }
 </style>
 </head>
